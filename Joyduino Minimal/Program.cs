@@ -18,52 +18,52 @@ namespace Joyduino_Minimal
 
         public static Dictionary<char, KeyList> table = new Dictionary<char, KeyList>()
         {
-			/*
-				Associate with each joypad button a list of keys.
-				A key contains the two action to do when the button is pressed and released.
-				Multiple keys can be associated with a single button.
-				
-				Actually the association is based on COD5 WaW PC game, adjust it for the game that you want use.
-			*/
-			//pad up
+            /*
+              Associate with each joypad button a list of keys.
+              A key contains the two action to do when the button is pressed and released.
+              Multiple keys can be associated with a single button.
+	
+              Actually the association is based on COD5 WaW PC game, adjust it for the game that you want use.
+            */
+            //pad up
             {'a', new KeyList() { new Key(VirtualKeyCode.VK_F, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_F, InputSimulator.SimulateKeyUp) } },
             //pad down
-			{'b', new KeyList() { new Key(VirtualKeyCode.CONTROL, InputSimulator.SimulateKeyDown, VirtualKeyCode.CONTROL, InputSimulator.SimulateKeyUp) } },
+            {'b', new KeyList() { new Key(VirtualKeyCode.CONTROL, InputSimulator.SimulateKeyDown, VirtualKeyCode.CONTROL, InputSimulator.SimulateKeyUp) } },
             //pad left
-			{'c', new KeyList() { new Key(VirtualKeyCode.LEFT, InputSimulator.SimulateKeyDown, VirtualKeyCode.LEFT, InputSimulator.SimulateKeyUp) } },
+            {'c', new KeyList() { new Key(VirtualKeyCode.LEFT, InputSimulator.SimulateKeyDown, VirtualKeyCode.LEFT, InputSimulator.SimulateKeyUp) } },
             //pad right
-			{'d', new KeyList() { new Key(VirtualKeyCode.VK_5, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_5, InputSimulator.SimulateKeyUp) } },
+            {'d', new KeyList() { new Key(VirtualKeyCode.VK_5, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_5, InputSimulator.SimulateKeyUp) } },
             //cross
-			{'e', new KeyList() { new Key(VirtualKeyCode.SPACE, InputSimulator.SimulateKeyDown, VirtualKeyCode.SPACE, InputSimulator.SimulateKeyUp) } },
+            {'e', new KeyList() { new Key(VirtualKeyCode.SPACE, InputSimulator.SimulateKeyDown, VirtualKeyCode.SPACE, InputSimulator.SimulateKeyUp) } },
             //square
-			{'f', new KeyList() { new Key(VirtualKeyCode.VK_R, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_R, InputSimulator.SimulateKeyUp) } },
+            {'f', new KeyList() { new Key(VirtualKeyCode.VK_R, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_R, InputSimulator.SimulateKeyUp) } },
             //circle
-			{'g', new KeyList() {
+            {'g', new KeyList() {
                 new Key(VirtualKeyCode.VK_C, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_C, InputSimulator.SimulateKeyDown),
                 new Key(VirtualKeyCode.CONTROL, InputSimulator.SimulateKeyDown, VirtualKeyCode.CONTROL, InputSimulator.SimulateKeyDown),
                 new Key(VirtualKeyCode.SPACE, InputSimulator.SimulateKeyDown, VirtualKeyCode.SPACE, InputSimulator.SimulateKeyDown)
             } },
             //triangle
-			{'h', new KeyList() { new Key(VirtualKeyCode.VK_1, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_1, InputSimulator.SimulateKeyUp) } },
+            {'h', new KeyList() { new Key(VirtualKeyCode.VK_1, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_1, InputSimulator.SimulateKeyUp) } },
             //L1
-			{'i', new KeyList() { new Key(VirtualKeyCode.VK_4, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_4, InputSimulator.SimulateKeyUp) } },
+            {'i', new KeyList() { new Key(VirtualKeyCode.VK_4, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_4, InputSimulator.SimulateKeyUp) } },
             //L2
-			{'j', new KeyList() { new Key(VirtualKeyCode.RBUTTON, InputSimulator.SimulateKeyPress, VirtualKeyCode.RBUTTON, InputSimulator.SimulateKeyPress) } },
+            {'j', new KeyList() { new Key(VirtualKeyCode.RBUTTON, InputSimulator.SimulateKeyPress, VirtualKeyCode.RBUTTON, InputSimulator.SimulateKeyPress) } },
             //R1
-			{'k', new KeyList() { new Key(VirtualKeyCode.VK_G, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_G, InputSimulator.SimulateKeyUp) } },
+            {'k', new KeyList() { new Key(VirtualKeyCode.VK_G, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_G, InputSimulator.SimulateKeyUp) } },
             //R2
-			{'l', new KeyList() { new Key(VirtualKeyCode.LBUTTON, InputSimulator.SimulateKeyDown, VirtualKeyCode.LBUTTON, InputSimulator.SimulateKeyUp) } },
+            {'l', new KeyList() { new Key(VirtualKeyCode.LBUTTON, InputSimulator.SimulateKeyDown, VirtualKeyCode.LBUTTON, InputSimulator.SimulateKeyUp) } },
             //Select
-			{'m', new KeyList() { new Key(VirtualKeyCode.VK_6, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_6, InputSimulator.SimulateKeyUp) } },
+            {'m', new KeyList() { new Key(VirtualKeyCode.VK_6, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_6, InputSimulator.SimulateKeyUp) } },
             //Start
-			{'n', new KeyList() { new Key(VirtualKeyCode.ESCAPE, InputSimulator.SimulateKeyDown, VirtualKeyCode.ESCAPE, InputSimulator.SimulateKeyUp) } },
+            {'n', new KeyList() { new Key(VirtualKeyCode.ESCAPE, InputSimulator.SimulateKeyDown, VirtualKeyCode.ESCAPE, InputSimulator.SimulateKeyUp) } },
             //R3
-			{'o', new KeyList() { new Key(VirtualKeyCode.VK_V, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_V, InputSimulator.SimulateKeyUp) } },
+            {'o', new KeyList() { new Key(VirtualKeyCode.VK_V, InputSimulator.SimulateKeyDown, VirtualKeyCode.VK_V, InputSimulator.SimulateKeyUp) } },
             //L3
-			{'p', new KeyList() { new Key(VirtualKeyCode.LSHIFT, InputSimulator.SimulateKeyDown, VirtualKeyCode.LSHIFT, InputSimulator.SimulateKeyUp) } }
+            {'p', new KeyList() { new Key(VirtualKeyCode.LSHIFT, InputSimulator.SimulateKeyDown, VirtualKeyCode.LSHIFT, InputSimulator.SimulateKeyUp) } }
         };
 
-		//move mouse proportionally to the analog coordinates
+        //move mouse proportionally to the analog coordinates
         public static void AnalogMouse(int x, int y)
         {
             if (x >= 98 && x <= 142)
@@ -75,7 +75,7 @@ namespace Joyduino_Minimal
             Cursor.Position = new Point(Cursor.Position.X + x, Cursor.Position.Y + y);
         }
 
-		//press WSAD keys proportionally to the analog coordinates change
+        //press WSAD keys proportionally to the analog coordinates change
         public class AnalogKeys
         {
             public VirtualKeyCode oldKey = 0;
@@ -239,10 +239,10 @@ namespace Joyduino_Minimal
             }
             Console.WriteLine("Controller pronto all'uso.");
 
-			/*
-			 left analog ---> WSAD keys
-			 right analog --> mouse
-			*/
+            /*
+             left analog ---> WSAD keys
+             right analog --> mouse
+            */
             AnalogKeys lanalog = new AnalogKeys();
 
             while (true)
